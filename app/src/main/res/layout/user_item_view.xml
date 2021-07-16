@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintCircleRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/userName"
+                android:textStyle="bold"
+                android:fontFamily="@font/rokkitt_medium"
+                android:textSize="20sp"
+                android:textColor="#181816"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/userNumber"
+                android:fontFamily="@font/rokkitt_medium"
+                android:layout_marginTop="2dp"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/userEmail"
+                        android:fontFamily="@font/rokkitt_medium"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/imageView"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_view_icon"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="15dp" />
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/imageUpdate"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/edit_blue"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="15dp" />
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/imageDelete"
+                        android:src="@drawable/img_delete"
+                        android:layout_height="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

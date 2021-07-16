@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="50dp">
+
+    <ImageView android:layout_width="45dp"
+               android:src="@drawable/ic_arrow_back"
+               android:id="@+id/imgBack"
+               android:layout_marginLeft="8dp"
+               android:layout_centerVertical="true"
+               android:layout_height="27dp"
+               android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="#FFF"
+              android:textSize="22sp"
+              android:id="@+id/tvTitle"
+              android:layout_toRightOf="@+id/imgBack"
+              android:layout_toLeftOf="@+id/tvAdd"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+              android:fontFamily="@font/rokkitt_medium"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@+id/imgBack"
+              android:layout_toStartOf="@+id/tvAdd"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="Add"
+              android:id="@+id/tvAdd"
+              android:textColor="#E84D5050"
+              android:layout_marginRight="10dp"
+              android:textStyle="bold"
+              android:textSize="15sp"
+              android:layout_alignParentRight="true"
+              android:fontFamily="@font/rokkitt_medium"
+              android:layout_centerVertical="true"
+              android:gravity="center_vertical"
+              android:layout_height="match_parent"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>
